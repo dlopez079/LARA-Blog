@@ -46,7 +46,7 @@ class RegisteredUserController extends Controller
         ]);
 
         // This will attach a default role to all users that register.
-        $user->attacheRole(admin);
+        $user->attacheRole('admin');
 
         event(new Registered($user));
 

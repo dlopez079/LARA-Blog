@@ -11,7 +11,7 @@ class DashboardController extends Controller
     // ---------------------------------------------
     // This is the index.
     // It will check the roles of the user
-    // and forward them tot he appropriate page. 
+    // and forward them to he appropriate page. 
     // There are only 3 roles currently on application
     // ---------------------------------------------
     public function index()

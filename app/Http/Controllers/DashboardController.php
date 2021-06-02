@@ -26,9 +26,24 @@ class DashboardController extends Controller
     }
 
     // ------------------------------------------------
-    // 
+    // Create a public function for the my profile blade.
+    //
     public function myprofile()
     {
         return view('myprofile');
     }
+    //
+    // -----------------------------------------------
+
+    // ------------------------------------------------
+    // Create a public function for the my profile blade.
+    //
+    public function postcreate()
+    {
+        return view('postcreate');
+    }
+    //
+    // -----------------------------------------------
+
+    
 }

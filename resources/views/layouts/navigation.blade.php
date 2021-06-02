@@ -11,11 +11,32 @@
                 </div>
 
                 <!-- Navigation Links -->
+                <!-- Dashboard Link -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+
+                <!-- My Profile Link will only be for user role.  I inserted an if statement for users. -->
+                @if (Auth::user()->hasRole('user'))
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link :href="route('dashboard.myprofile')" :active="request()->routeIs('dashboard.myprofile')">
+                            {{ __('My Profile') }}
+                        </x-nav-link>
+                    </div>
+                @endif
+
+                <!-- Create Blog Post Link will only be for Blogwriters role.  I inserted an if statement for user. -->
+                @if (Auth::user()->hasRole('blogwriter'))
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-nav-link :href="route('dashboard.postcreate')" :active="request()->routeIs('dashboard.postcreate')">
+                            {{ __('Create New Blog Post') }}
+                        </x-nav-link>
+                    </div>
+                @endif
+            
+
             </div>
 
             <!-- Settings Dropdown -->

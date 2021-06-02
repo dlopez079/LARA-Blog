@@ -45,4 +45,13 @@ Route::group(['middleware' => ['auth']], function() {
 //
 // =====================================================================
 
+
+// =====================================================================
+//
+// For users
+Route::group(['middleware' => ['auth', 'role:user']], function() {
+    Route::get('/dashboard/myprofile', 'App\Http\Controllers\DashboardController@myprofile')->name('dashboard.myprofile');
+});
+//
+// =====================================================================
 require __DIR__.'/auth.php';

@@ -49,9 +49,23 @@ Route::group(['middleware' => ['auth']], function() {
 // =====================================================================
 //
 // For users
+//
 Route::group(['middleware' => ['auth', 'role:user']], function() {
     Route::get('/dashboard/myprofile', 'App\Http\Controllers\DashboardController@myprofile')->name('dashboard.myprofile');
 });
 //
 // =====================================================================
+
+
+// =====================================================================
+//
+// For Blogwriters
+//
+Route::group(['middleware' => ['auth', 'role:blogwriter']], function() {
+    Route::get('/dashboard/postcreate', 'App\Http\Controllers\DashboardController@postcreate')->name('dashboard.postcreate');
+});
+//
+// =====================================================================
+
+
 require __DIR__.'/auth.php';

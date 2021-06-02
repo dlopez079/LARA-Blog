@@ -17,8 +17,32 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+// =====================================================================
+//
+// THIS IS THE OLD ROUTE FOR THE DASHBOARD.  
+// WE REMOVED IT SINCE WE WOULD LIKE TO HAVE 
+// A DIFFERNT DASHBOARD FOR THE DIFFERENT USER AND THEIR ROLES.
+// I'M KEEPING IT HERE FOR REFERENCE.
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');
+//
+// =====================================================================
+
+
+// =====================================================================
+//
+// Authentication Route for User Roles.
+// Here we will use a middleware that will check authentication.
+// Without Authentication, they will not be fowarded to the dashboard.
+// Once Authenticated, they will be forwarded to the dashboard route
+// via the index method on the DashboardController
+//
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
+});
+//
+// =====================================================================
 
 require __DIR__.'/auth.php';

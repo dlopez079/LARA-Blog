@@ -1,6 +1,6 @@
 # LARA-Blog
 
-This project is to practice creating a blog that will have multiple users with multiple roles signing into it.  I did not focus on design of the pages.  I focused on how the blade views worked after having multiple users with multiple Roles.  For this exercise, I created four test accounts, admin, blogwriter, user1, and user2.  Admin, blogwriters, and users see a different dashboard once they log in. The instructions below are very vague and I'm assuming that you have knowledge of the Laravel framework.  You can revert to the video below under acknowledgements.
+This project is to practice creating a blog that will have multiple users with multiple roles signing into it.  I did not focus on design of the pages.  I focused on how the blade views worked after having multiple users with multiple roles authenticating with the web application.  For this exercise, I created four test accounts, admin, blogwriter, user1, and user2.  Admin, blogwriters, and users see a different dashboard once they log in. The instructions below are very vague and I'm assuming that you have knowledge of the Laravel framework.  You can revert to the video below under acknowledgements.
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ This project is to practice creating a blog that will have multiple users with m
 
 ### Installing
 
-# Windows Envrionment
+## Windows Envrionment
 1. Download and install WSL 2.0 onto your computer. 
 2. Download and install Docker Desktop on your computer. (If you download Docker Desktop before the WSL, The Docker Desktop installation will enable WSL on your machine).
 3. Download and install Visual Studio Code.
@@ -46,7 +46,9 @@ This project is to practice creating a blog that will have multiple users with m
     a. Download and install git.
     b. Download and install node.js.
     c. Download and install composer.
-    d. Create your Laravel Project
+    d. Create your Laravel Project 
+        1. When creating a new project, Laravel Sail is already packaged in.
+        2. When you are cloning an already existing project, you must require Laravel Sail using composer. 
     c. Download and install Laravel Breeze
     d. Download and install Laratrust
 
@@ -57,8 +59,9 @@ This project is to practice creating a blog that will have multiple users with m
 * [Ubuntu Virtual OS](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?ocid=9nblggh4msv6_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab) - The virtual Linix operating system for Windows
 * [Visual Studio Code](https://code.visualstudio.com/Download) - The code editor - Integrated Git, debugging and extensions. (IDE)
 * [Laravel 8](https://laravel.com/docs/8.x) - The web framework used
-* [Git for Linux](https://git-scm.com/download/linux) - Dependency Management (Remember you are working on a Linux desktop, not windows)
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Laravel Sail](https://laravel.com/docs/8.x/sail) - Package to help work with docker containers.
+* [Laravel Breeze](https://laravel.com/docs/8.x/starter-kits#laravel-breeze) - Used for front end authentication.
+* [Laratrust](https://laratrust.santigarcor.me/) - Used for multi-roles and multi-user authentication.
 
 
 ## Authors

@@ -28,13 +28,13 @@ This project is to practice creating a blog that will have multiple users with m
 2. Download and install Docker Desktop on your computer. (If you download Docker Desktop before the WSL, The Docker Desktop installation will enable WSL on your machine).
 3. Download and install Visual Studio Code.
     a. Extensions for VSCode: 
-        1. Beautify css/sass/scss/less
-        2. Command Alias
-        3. Docker
-        4. Emmet Live
-        5. Getter and Setter Generator
-        6. Laravel Artisan
-        7. VS Code Great Icons
+        * Beautify css/sass/scss/less
+        * Command Alias
+        * Docker
+        * Emmet Live
+        * Getter and Setter Generator
+        * Laravel Artisan
+        * VS Code Great Icons
         8. Remote - WSL >>> SUPER IMPORTANT IF YOU WANT YOUR VS CODE TO CONNECT TO YOUR VIRTUAL ENVIRONMENT
         9. Open in Browser
         10.Live Snippets

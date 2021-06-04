@@ -24,7 +24,7 @@
             <div class="text-gray-400 bg-blue-300 p-10">Title</div>
         </header>
     
-        <nav class="border-3 border-black bg-gray-300">
+        <nav class="border-3 border-black bg-gray-300 p-5">
             <div>Site Nav</div>
         </nav>
     

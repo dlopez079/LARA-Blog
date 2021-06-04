@@ -11,20 +11,20 @@
 <body class="width:%100 text-center">
 
 
-    <div class="container">
+    <div class="container mx-auto px-4">
 
 
         <nav>
             <div class="border-3 border-black bg-gray-300">
-                <div class="text-red-300 p-1.5">Title</div>
+                <div class="text-red-300 p-1.5">Social Media Navigation Bar</div>
             </div>
         </nav>
         
         <header>
-            <div class="text-gray-400">Title</div>
+            <div class="text-gray-400 bg-blue-300">Title</div>
         </header>
     
-        <nav>
+        <nav class="border-3 border-black bg-gray-300">
             <div>Site Nav</div>
         </nav>
     

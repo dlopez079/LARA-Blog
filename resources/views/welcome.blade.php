@@ -28,6 +28,9 @@
             <div>Site Nav</div>
         </nav>
     
+        <div class="text-red-300 bg-green-300 p-40">
+            <h1>Main Image</h1>
+        </div>
         <section>
             
             <div class="p-5">

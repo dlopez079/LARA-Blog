@@ -25,7 +25,13 @@
         </header>
     
         <nav class="border-3 border-black bg-gray-300 p-5">
-            <div>Site Nav</div>
+            <ul>
+                <li>Button 1</li>
+                <li>Button 2</li>
+                <li>Button 3</li>
+                <li>Button 4</li>
+                <li>Button 5</li>
+            </ul>
         </nav>
     
         <div class="text-red-300 bg-green-300 p-40">

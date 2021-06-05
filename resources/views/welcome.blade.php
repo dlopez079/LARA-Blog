@@ -11,7 +11,7 @@
 <body class="width:%100 text-center">
 
 
-    <div class="container mx-auto px-4 py-10">
+    <div class="2x1:container 2xl:mx-auto">
 
 
         <nav>

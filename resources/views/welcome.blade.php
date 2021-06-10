@@ -39,9 +39,12 @@
         </div>
         <section>
             
-            <div class="p-5">
-                <h1>Blog List</h1>
+            <div class="p-5 ">
+                <h1>Blog <br>
+                    List</h1>
             </div>
+
+            <div class="p-10 decoration-clone bg-gradient-to-b from-yellow-400 to-red-500 text-transparent"></div>
             
             <!------------------------------------------------------------------------------------------------------->
             <!-- Blog List Card -->

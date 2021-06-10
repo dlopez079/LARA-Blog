@@ -24,13 +24,13 @@
             <div class="text-gray-400 bg-blue-300 p-10">Title</div>
         </header>
     
-        <nav class="border-3 border-black bg-gray-300 p-5">
+        <nav class="border-3 border-black bg-gray-300 p-5 space-x-4 flex mx-auto">
             <ul>
-                <li>Button 1</li>
-                <li>Button 2</li>
-                <li>Button 3</li>
-                <li>Button 4</li>
-                <li>Button 5</li>
+                <li class="inline-block">Button 1</li>
+                <li class="inline-block">Button 2</li>
+                <li class="inline-block">Button 3</li>
+                <li class="inline-block">Button 4</li>
+                <li class="inline-block">Button 5</li>
             </ul>
         </nav>
     

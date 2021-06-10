@@ -45,6 +45,8 @@
             </div>
 
             <div class="p-10 decoration-clone bg-gradient-to-b from-yellow-400 to-red-500 text-transparent"></div>
+
+            <div class="box-content h-32 w-32 p-4 border-4"></div>
             
             <!------------------------------------------------------------------------------------------------------->
             <!-- Blog List Card -->
